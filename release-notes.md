@@ -1,10 +1,9 @@
-Aventuras e bombeiros
+Caminhos variados nas aventuras
 
-- A capa Aventuras reúne o coelhinho e duas novas missões: gatinho na árvore e cachorrinho na lagoa.
-- Equipamentos ilustrados, caminhão interativo, resgates e quinze novas falas offline com a voz A.
-- As etapas avançam automaticamente após a narração, com o coelhinho em destaque saindo aos pulos.
-- Atualização integrada: download por Wi-Fi, verificação do APK e instalação pelo próprio aplicativo quando o Android permitir.
+- A chegada das duas missões de bombeiro alterna entre seis caminhos: arco, diagonal, degraus arredondados, colinas, vale e curva ampla.
+- Todos são apresentados antes de repetir o ciclo, sem repetir o último caminho em seguida.
+- Ao selecionar o caminhão e tocar no destino, ele acompanha as curvas do trajeto.
+- Arrasto livre, pistas largas, movimento reduzido e cancelamento pelo botão Voltar preservados.
+- O caminho de chegada usa um parque em terra firme; o resgate do cachorrinho mantém a lagoa.
 
-Para habilitar o novo atualizador, instale esta versão uma vez e abra Responsáveis → Autorizar atualizações neste aparelho. O Android pode pedir confirmação adicional para instalar. O jogo continua funcionando sem internet.
-
-Compatibilidade adicional na leitura da assinatura em versões antigas do Android e controle de novas tentativas quando a verificação falhar.
+O novo atualizador continua incluído. Para versões antigas que ainda abrem o navegador, instale o APK e autorize atualizações na área Responsáveis.
