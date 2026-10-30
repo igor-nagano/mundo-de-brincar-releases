@@ -13,24 +13,50 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      RELEASE_SHA: ${{ github.sha }}
     steps:
-      - name: Validar e publicar o APK assinado
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
-          RELEASE_SHA: ${{ github.sha }}
+      - name: Baixar metadados
         shell: bash
         run: |
           set -euo pipefail
-          endpoint="repos/$GH_REPO/contents"
-          gh api -H 'Accept: application/vnd.github.raw+json' "$endpoint/release.json?ref=$RELEASE_SHA" > release.json
-          gh api -H 'Accept: application/vnd.github.raw+json' "$endpoint/release-notes.md?ref=$RELEASE_SHA" > release-notes.md
-          tag=$(jq -er '.tag' release.json)
-          asset=$(jq -er '.asset' release.json)
-          checksum=$(jq -er '.sha256' release.json)
-          [[ "$tag" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]
-          [[ "$asset" =~ ^mundo-de-brincar-mvp-v[0-9]+\.[0-9]+\.[0-9]+\.apk$ ]]
-          [[ "$checksum" =~ ^[a-f0-9]{64}$ ]]
-          gh api -H 'Accept: application/vnd.github.raw+json' "$endpoint/apk/$asset?ref=$RELEASE_SHA" > "$asset"
-          printf '%s  %s\n' "$checksum" "$asset" | sha256sum --check
-          gh release create "$tag" "$asset" --repo "$GH_REPO" --target "$RELEASE_SHA" --title "Mundo de Brincar $tag" --notes-file release-notes.md --latest
+          gh api -H 'Accept: application/vnd.github.raw+json' "repos/$GH_REPO/contents/release.json?ref=$RELEASE_SHA" > release.json || { echo '::error::Falha ao obter release.json'; exit 1; }
+          gh api -H 'Accept: application/vnd.github.raw+json' "repos/$GH_REPO/contents/release-notes.md?ref=$RELEASE_SHA" > release-notes.md || { echo '::error::Falha ao obter notas'; exit 1; }
+      - name: Validar metadados
+        shell: python
+        run: |
+          import json, os, re
+          with open('release.json', encoding='utf-8-sig') as f:
+              release = json.load(f)
+          rules = {'tag': r'v[0-9]+\.[0-9]+\.[0-9]+', 'asset': r'mundo-de-brincar-mvp-v[0-9]+\.[0-9]+\.[0-9]+\.apk', 'sha256': r'[a-f0-9]{64}'}
+          for field, pattern in rules.items():
+              if not re.fullmatch(pattern, release.get(field, '')):
+                  print(f'::error::Campo inválido: {field} = {release.get(field)!r}')
+                  raise SystemExit(1)
+          with open(os.environ['GITHUB_ENV'], 'a', encoding='utf-8') as env:
+              env.write('RELEASE_TAG=' + release['tag'] + '\n')
+              env.write('RELEASE_ASSET=' + release['asset'] + '\n')
+          print('::notice::Metadados da versão validados')
+      - name: Baixar APK assinado
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh api -H 'Accept: application/vnd.github.raw+json' "repos/$GH_REPO/contents/apk/$RELEASE_ASSET?ref=$RELEASE_SHA" > "$RELEASE_ASSET" || { echo '::error::Falha ao obter o APK'; exit 1; }
+      - name: Conferir SHA256
+        shell: python
+        run: |
+          import hashlib, json, os
+          with open('release.json', encoding='utf-8-sig') as f:
+              release = json.load(f)
+          with open(os.environ['RELEASE_ASSET'], 'rb') as f:
+              actual = hashlib.file_digest(f, 'sha256').hexdigest()
+          if actual != release['sha256']:
+              print('::error::SHA256 do APK não corresponde ao arquivo original')
+              raise SystemExit(1)
+          print('::notice::APK confere com o arquivo original assinado')
+      - name: Publicar release estável
+        shell: bash
+        run: |
+          gh release create "$RELEASE_TAG" "$RELEASE_ASSET" --repo "$GH_REPO" --target "$RELEASE_SHA" --title "Mundo de Brincar $RELEASE_TAG" --notes-file release-notes.md --latest || { echo '::error::Falha ao publicar a release'; exit 1; }
