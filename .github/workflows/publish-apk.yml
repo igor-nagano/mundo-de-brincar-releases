@@ -43,7 +43,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          gh api -H 'Accept: application/vnd.github.raw+json' "repos/$GH_REPO/contents/apk/$RELEASE_ASSET?ref=$RELEASE_SHA" > "$RELEASE_ASSET" || { echo '::error::Falha ao obter o APK'; exit 1; }
+          curl --fail --location --retry 2 "https://raw.githubusercontent.com/$GH_REPO/$RELEASE_SHA/apk/$RELEASE_ASSET" --output "$RELEASE_ASSET" || { echo '::error::Falha ao obter o APK'; exit 1; }
       - name: Conferir SHA256
         shell: python
         run: |
