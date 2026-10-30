@@ -1,12 +1,13 @@
-A criança agora escolhe os utensílios do banho.
+Lanche dos amigos: cada alimento tem seu destino.
 
-- Esponja, mangueira e toalha disponíveis desde o começo, sem seleção automática.
-- Escolha por toque ou arrasto e troca livre entre os objetos.
-- Cada área guarda seu progresso: lama, espuma, gotas e seca.
-- Tentar outra ordem não perde progresso nem causa sons de erro; uma dica suave ajuda quando necessário.
-- Nova narração convida a criança a escolher o objeto.
-- Preservados os esconderijos que desaparecem, a música, o silêncio global e o final da história.
+- Cenoura para o coelhinho, milho para o pintinho e feno para a ovelha.
+- Novas ilustrações com o mesmo acabamento dos personagens.
+- Pratos com pistas visuais e bandeja embaralhada.
+- A criança escolhe por onde começar e pode arrastar ou tocar.
+- Tentar outro prato mantém o alimento disponível e oferece uma dica suave.
+- Novas falas nomeiam os pares corretos.
+- Mantida a escolha livre de esponja, mangueira e toalha no banho, sem troca automática da ferramenta.
 
-O desenho segue princípios gerais de brincadeira guiada e escolha com apoio da NAEYC. Isso não constitui validação pedagógica experimental do aplicativo.
+A proposta aplica princípios gerais de brincadeira guiada da NAEYC, com escolha da criança e apoio leve. Isso não equivale a uma validação pedagógica experimental do aplicativo.
 
-Android 6 ou superior, tela horizontal. Imagens, música e narração incluídas para jogar offline.
+Android 6 ou superior, tela horizontal, imagens e áudio incluídos para jogar offline.
