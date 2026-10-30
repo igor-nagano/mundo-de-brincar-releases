@@ -1,10 +1,11 @@
-Uma única brincadeira de encaixar, com capa da vaca e cinco peças por fase.
+A primeira aventura do coelhinho chegou!
 
-- Mistura animais, objetos, formas e frutas: 128 peças disponíveis.
-- Dez formas com acabamento ilustrado e vinte novas frutas estilizadas.
-- Fases contínuas: outra começa automaticamente até tocar em Voltar.
-- Nome falado apenas no encaixe correto; música e animações preservadas.
-- Silhuetas muito parecidas não aparecem juntas.
-- Botão de som liga e desliga todos os áudios; aviso de atualização na área dos responsáveis.
+- Encontre o coelhinho escondido no jardim.
+- Dê banho com esponja, chuveirinho e toalha: a sujeira, a espuma e as gotas saem com o dedo.
+- Prepare o lanche: distribua três frutas, uma para cada amigo, arrastando ou tocando.
+- Narração em português com a voz do jogo e botão para repetir cada orientação.
+- História com começo, meio e fim, sem cronômetro e sem penalidades.
+- Botão de voltar disponível em todas as etapas; silêncio global respeitado.
+- Os demais jogos e as fases contínuas de encaixe continuam disponíveis.
 
-APK para Android 6 ou superior, em tela horizontal. Conteúdo e áudio funcionam offline.
+Testado no BlueStacks com gestos reais do Android. Android 6 ou superior, tela horizontal. Narração, imagens e música incluídas para jogar offline.
