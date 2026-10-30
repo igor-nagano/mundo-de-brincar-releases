@@ -1,11 +1,9 @@
-A aventura do coelhinho ganhou novas ilustrações e narração revisada.
+Os esconderijos agora fazem parte do jardim.
 
-- Jardim elaborado com arbusto, cesta e tronco em camadas que se mexem suavemente.
-- Esponja, mangueira, toalha e banheira com o mesmo acabamento ilustrado do coelhinho.
-- A ferramenta acompanha o dedo; também pode ser arrastada da bandeja.
-- A lama vira espuma; a mangueira faz jatos de água e deixa gotas; a toalha seca com um brilho breve.
-- Treze falas regravadas com instruções curtas. A sequência espera a narração, evitando cortes.
-- Repetir a orientação não reinicia a fala enquanto ela ainda toca.
-- Mantidos o silêncio global, o botão Voltar, o final da história e o modo de movimento reduzido.
+- Cenário contínuo em tela inteira, sem o painel que isolava os objetos.
+- Cesta perto da árvore, arbusto ao fundo e tronco em primeiro plano, com escalas e posições diferentes.
+- Movimento leve na imagem inteira de cada esconderijo, com pausas.
+- Mantidos os utensílios ilustrados, os efeitos de lama/espuma/água e as treze falas revisadas da versão 0.5.1.
+- Preservados o botão Voltar, o silêncio global e a preferência de movimento reduzido.
 
-Testado no BlueStacks com gestos reais do Android. Android 6 ou superior, tela horizontal, conteúdo e áudio offline.
+Android 6 ou superior, tela horizontal. Imagens, música e narração incluídas para jogar offline.
