@@ -1,9 +1,11 @@
-Caminhos variados nas aventuras
+Nova aventura: Apagar o incêndio
 
-- A chegada das duas missões de bombeiro alterna entre seis caminhos: arco, diagonal, degraus arredondados, colinas, vale e curva ampla.
-- Todos são apresentados antes de repetir o ciclo, sem repetir o último caminho em seguida.
-- Ao selecionar o caminhão e tocar no destino, ele acompanha as curvas do trajeto.
-- Arrasto livre, pistas largas, movimento reduzido e cancelamento pelo botão Voltar preservados.
-- O caminho de chegada usa um parque em terra firme; o resgate do cachorrinho mantém a lagoa.
+- Prepare capacete, mangueira e cone, leve o caminhão até o galpão por caminhos variados e apague os três focos.
+- A mangueira lança água até o ponto tocado. As chamas diminuem gradualmente ao manter ou deslizar o dedo; cada foco guarda seu progresso.
+- Soltar o dedo interrompe a água. Também aceita toques curtos; não há cronômetro ou perda de progresso.
+- Galpão e chamas ilustrados no acabamento do coelhinho, cinco novas falas offline e final automático após apagar tudo.
+- Menu com quatro aventuras, movimento reduzido e controle global de som preservados.
 
-O novo atualizador continua incluído. Para versões antigas que ainda abrem o navegador, instale o APK e autorize atualizações na área Responsáveis.
+Testado no navegador e no BlueStacks com gestos reais do Android, incluindo preparação, chegada, água nos três focos e conclusão narrada.
+
+Se sua versão antiga ainda abre o navegador para atualizar, baixe e instale este APK sem desinstalar o jogo. Depois autorize atualizações na área Responsáveis.
