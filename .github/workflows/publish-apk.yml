@@ -1,0 +1,36 @@
+name: Publicar APK
+on:
+  push:
+    branches: [main]
+    paths: ["release.json", "apk/**", ".github/workflows/publish-apk.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publicar-apk
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Validar e publicar o APK assinado
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_SHA: ${{ github.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          endpoint="repos/$GH_REPO/contents"
+          gh api -H 'Accept: application/vnd.github.raw+json' "$endpoint/release.json?ref=$RELEASE_SHA" > release.json
+          gh api -H 'Accept: application/vnd.github.raw+json' "$endpoint/release-notes.md?ref=$RELEASE_SHA" > release-notes.md
+          tag=$(jq -er '.tag' release.json)
+          asset=$(jq -er '.asset' release.json)
+          checksum=$(jq -er '.sha256' release.json)
+          [[ "$tag" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          [[ "$asset" =~ ^mundo-de-brincar-mvp-v[0-9]+\.[0-9]+\.[0-9]+\.apk$ ]]
+          [[ "$checksum" =~ ^[a-f0-9]{64}$ ]]
+          gh api -H 'Accept: application/vnd.github.raw+json' "$endpoint/apk/$asset?ref=$RELEASE_SHA" > "$asset"
+          printf '%s  %s\n' "$checksum" "$asset" | sha256sum --check
+          gh release create "$tag" "$asset" --repo "$GH_REPO" --target "$RELEASE_SHA" --title "Mundo de Brincar $tag" --notes-file release-notes.md --latest
