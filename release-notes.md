@@ -1,9 +1,8 @@
-Os esconderijos agora fazem parte do jardim.
+Os esconderijos já procurados agora saem do jardim.
 
-- Cenário contínuo em tela inteira, sem o painel que isolava os objetos.
-- Cesta perto da árvore, arbusto ao fundo e tronco em primeiro plano, com escalas e posições diferentes.
-- Movimento leve na imagem inteira de cada esconderijo, com pausas.
-- Mantidos os utensílios ilustrados, os efeitos de lama/espuma/água e as treze falas revisadas da versão 0.5.1.
-- Preservados o botão Voltar, o silêncio global e a preferência de movimento reduzido.
+- Objetos de locais vazios desaparecem suavemente e deixam de aceitar toques.
+- Ao encontrar o coelhinho, o objeto à frente dele desaparece completamente.
+- Os locais ainda não procurados permanecem no cenário.
+- Mantidos o banho interativo, o lanche, a narração revisada e o controle de áudio.
 
-Android 6 ou superior, tela horizontal. Imagens, música e narração incluídas para jogar offline.
+Android 6 ou superior, tela horizontal. Conteúdo e áudio incluídos para jogar offline.
