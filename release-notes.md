@@ -1,13 +1,11 @@
-A primeira aventura do coelhinho chegou!
+A aventura do coelhinho ganhou novas ilustrações e narração revisada.
 
-- Encontre o coelhinho escondido no jardim.
-- Dê banho com esponja, chuveirinho e toalha: a sujeira, a espuma e as gotas saem com o dedo.
-- Prepare o lanche: distribua três frutas, uma para cada amigo, arrastando ou tocando.
-- Narração em português com a voz do jogo e botão para repetir cada orientação.
-- História com começo, meio e fim, sem cronômetro e sem penalidades.
-- Botão de voltar disponível em todas as etapas; silêncio global respeitado.
-- Nova tela de abertura com cenário da fazenda, círculo animado e status real da verificação de atualização.
-- O botão Começar permite entrar após o conteúdo carregar; consultas lentas continuam em segundo plano.
-- Os demais jogos e as fases contínuas de encaixe continuam disponíveis.
+- Jardim elaborado com arbusto, cesta e tronco em camadas que se mexem suavemente.
+- Esponja, mangueira, toalha e banheira com o mesmo acabamento ilustrado do coelhinho.
+- A ferramenta acompanha o dedo; também pode ser arrastada da bandeja.
+- A lama vira espuma; a mangueira faz jatos de água e deixa gotas; a toalha seca com um brilho breve.
+- Treze falas regravadas com instruções curtas. A sequência espera a narração, evitando cortes.
+- Repetir a orientação não reinicia a fala enquanto ela ainda toca.
+- Mantidos o silêncio global, o botão Voltar, o final da história e o modo de movimento reduzido.
 
-Testado no BlueStacks com gestos reais do Android. Android 6 ou superior, tela horizontal. Narração, imagens e música incluídas para jogar offline.
+Testado no BlueStacks com gestos reais do Android. Android 6 ou superior, tela horizontal, conteúdo e áudio offline.
