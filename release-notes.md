@@ -6,6 +6,8 @@ A primeira aventura do coelhinho chegou!
 - Narração em português com a voz do jogo e botão para repetir cada orientação.
 - História com começo, meio e fim, sem cronômetro e sem penalidades.
 - Botão de voltar disponível em todas as etapas; silêncio global respeitado.
+- Nova tela de abertura com cenário da fazenda, círculo animado e status real da verificação de atualização.
+- O botão Começar permite entrar após o conteúdo carregar; consultas lentas continuam em segundo plano.
 - Os demais jogos e as fases contínuas de encaixe continuam disponíveis.
 
 Testado no BlueStacks com gestos reais do Android. Android 6 ou superior, tela horizontal. Narração, imagens e música incluídas para jogar offline.
