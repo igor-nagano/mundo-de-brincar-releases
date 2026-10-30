@@ -1,9 +1,10 @@
-## Mundo de Brincar 0.4.1
+Uma única brincadeira de encaixar, com capa da vaca e cinco peças por fase.
 
-- Carrinho ilustrado na capa do jogo de Objetos.
-- Botão de som liga e desliga música, narração e efeitos, preservando os volumes escolhidos.
-- Verificação de novas versões ao abrir o aplicativo, com download na área dos responsáveis.
-- Oito cenários novos, com 30 animais e 50 objetos ilustrados.
-- Fases automáticas com 2, 3, 4 e 5 peças.
+- Mistura animais, objetos, formas e frutas: 128 peças disponíveis.
+- Dez formas com acabamento ilustrado e vinte novas frutas estilizadas.
+- Fases contínuas: outra começa automaticamente até tocar em Voltar.
+- Nome falado apenas no encaixe correto; música e animações preservadas.
+- Silhuetas muito parecidas não aparecem juntas.
+- Botão de som liga e desliga todos os áudios; aviso de atualização na área dos responsáveis.
 
-Android 6 ou superior. Instale o APK sobre a versão anterior para manter configurações e pinturas. A primeira instalação desta versão inclui a checagem de atualizações; as próximas versões serão avisadas dentro do jogo.
+APK para Android 6 ou superior, em tela horizontal. Conteúdo e áudio funcionam offline.
